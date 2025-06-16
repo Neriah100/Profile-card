@@ -8,12 +8,12 @@ body {
   margin: 0;
 }
 .card {
-    background-color: white;
-    border-radius: 16px;
-    padding: 30px;
-    width: 320px;
+    background-color: #ffffff;
+    border-radius: 110px;
+    padding: 20px;
+    width: 250px;
     text-align: center;
-    box-shadow: 0 8px 24px rgba(o,o,o,o.1);
+    box-shadow: 0 0px 15px rgba(o,o,o,o.1);
     transition: transform 0.3s ease;
 }
 .card:hover{
@@ -32,11 +32,11 @@ body {
     margin: 5px 0;
 }
 .social-links {
-    margin: 15px 0;
+    text-align: center;
 }
-.social-links a{
-    margin: 0 8px;
-    font-size: 20px;
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px;
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s;
@@ -45,6 +45,7 @@ body {
     color: #0056b3;
 }
 .buttons {
+    text-align: center;
     margin-top: 10px;
 }
 .btn {
@@ -58,4 +59,11 @@ body {
 }
 .btn:hover {
     background-color: rgb(224, 224, 221);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
