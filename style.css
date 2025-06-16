@@ -54,10 +54,11 @@ body {
    background-color: #50afef; 
    color: rgb(145, 19, 19);
    border-radius: 5px;
-   transition: background 0.3s;
+   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .btn:hover {
     background-color: rgb(224, 224, 221);
+    transform: scale(1.05);
 }
 .container {
     display: flex;
@@ -65,4 +66,21 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
+}
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }  
+}
+.card:nth-child(1){
+    animation-delay: 0.2s;
+}
+.card:nth-child(2){
+    animation-delay: 0.4s;
 }
