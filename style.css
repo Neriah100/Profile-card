@@ -100,3 +100,18 @@ body {
     height: 200px;
     object-fit: cover;
 }
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .card2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .btn {
+        width: 80%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
